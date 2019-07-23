@@ -1,12 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+        <title>Friend Finder</title>
 </head>
 <body>
-    
+    <div class="container">
+        <h2>Survey Questions</h2>
+    <hr>
+    <h3><strong>About You</strong></h3>
+
+    <h4>Name (Required)</h4>
+    <input type="text" id="name" class="from-control" required>
+     <h4>Link to Photo Image (Required)</h4>
+    <input type="text" id="photo" class="from-control" required>
+    <hr>
+
+    <h3><strong>Question 1</strong></h3>
+    <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+    <select class="chosen-select" id="q1" style="display: none;">
+    <option value></option>
+    <option value="1">1 (Strongly Disagree)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (Strongly Agree)</option>
+    </select>
+    <div class="chosen-container chosen-container-single" style="width: 152px;"
+    title id="q1_chosen">
+    <a class="chosen-single chosen-default">
+        <span>Select Option</span>
+        <div>
+            <b></b>
+        </div>
+    </a>
+    <div class="chosen-drop">
+        <div class="chosen-search">
+            <input type="text" autocomplete="off">
+        </div>
+        <ul class="chosen-results">
+                <li class="activate-results" data-option-array-index="1" style>1 (Strongly Disagree)</li>
+                <li class="activate-results" data-option-array-index="2" style>2</li>
+                <li class="activate-results" data-option-array-index="3" style>3</li>
+                <li class="activate-results" data-option-array-index="4" style>4</li>
+                <li class="activate-results" data-option-array-index="5" style>5 (Strongly Agree)</li>
+        </ul>
+    </div>
+    </div>
+
+
+
+    </div>
+
+
 </body>
 </html>
