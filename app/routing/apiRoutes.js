@@ -5,7 +5,17 @@ module.exports = function(app) {
         res.json(surveyData);
     });
     app.post('/api/friends', function(req, res) {
-        
-    }
-    )
-}
+        if (surveyData.length < 5) {
+            surveyData.push(req.body);
+            res.json(true);
+        }
+        else {
+            res.json(false);
+        }
+    });
+
+    app.post('api/clear', function(req, res) {
+        surveyData.length = 0;
+        res.json({ok:true});
+    });
+};
