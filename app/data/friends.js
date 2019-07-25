@@ -48,7 +48,8 @@ var friendArray = [
         name: "Fender",
         photo: "",
         score: ["4","3","5","3","1"]
-];
+    }
+    ];
 
 module.exports = friendArray;
 
