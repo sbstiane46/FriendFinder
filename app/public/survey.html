@@ -168,7 +168,7 @@
     </div>
 
     <!-- modal -->
-    <div id="results-modal" class="modal fade" role="dialog">
+    <div id="resultsModal" class="modal fade" role="dialog">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
@@ -176,8 +176,8 @@
                   <h2 class="modal-title"><strong>Best Match</strong></h2>
                 </div>
                 <div class="modal-body">
-                  <h2 id="match-name"></h2>
-                  <img id="match-img" src="data:image/jpeg;base64,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" alt="Friend image">
+                  <h2 id="matchName"></h2>
+                  <img id="matchImg" src="" alt="Friend image">
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -203,10 +203,16 @@
                 width: "95%"
               }
             };
+
+            for {var selector in config} {
+              $(selector).chosen(config[selector]);
+            }
+
              // Capture Inputs
-    $("#submit").on("click", function(event) {
+    $("#submit").on("click", function() {
       event.preventDefault();
 
+        //from validation
         function validateForm() {
           var isValid = true;
           $(".form-control").each(function() {
@@ -220,7 +226,6 @@
               isValid = false;
             }
           });
-
           return isValid;
         } 
 
@@ -228,7 +233,7 @@
       // If fields are filled
       if (validateForm()) {
         // Object for the user's data
-        var answers = {
+        var userData = {
           name: $("#name").val(),
           photo: $("#photo").val(),
           scores: [
@@ -244,14 +249,16 @@
             $("#q10").val()
           ]
         };
+        //grab URL of website
+        var currentURL = window.location.origin;
         // AJAX to friends API.
-        $.post("/api/friends", answers, function(data) {
-          console.log("line 251 of survey.html" + answers);
+        $.post(currentURL + "/api/friends", userData, function(data) {
+          
           // Matching to name and photo displayed.
-          $("#match-name").text(data.name);
-          $("#match-img").attr("src", data.photo);
+          $("#matchName").text(data.name);
+          $("#matchImg").attr("src", data.photo);
           // Show modal with the best match
-          $("#results-modal").modal("toggle");
+          $("#resultsModal").modal("toggle");
           alert("working");
         });
       } else {
