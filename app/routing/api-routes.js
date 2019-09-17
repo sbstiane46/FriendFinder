@@ -30,10 +30,10 @@ module.exports = function(app) {
             totalDifference = 0;
 
             //we loop through all scores of each friend
-            for (var j =0; j < friends[i].scores[j]; j++){
+            for (var j =0; j < friends[i].score[j]; j++){
 
             //calculates difference between scores and adds to totalDifference
-            totalDifference += Math.abs(parseInt(userScores[j]) - parseInt(friends[i].scores[j]));
+            totalDifference += Math.abs(parseInt(userScores[j]) - parseInt(friends[i].score[j]));
 
             //if sum of differences is less than the difference of the current "best match"
             if (totalDifference <= bestMatch.friendDifference) {
