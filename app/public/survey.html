@@ -162,7 +162,7 @@
     <footer class="footer">
         <div class="container">
                 <a href="../data/friends.js">API Friend List </a>||
-                <a href="https://sbstiane46.github.io/FriendFinder">GitHub Repo</a>
+                <a href="https://github.com/sbstiane46/FriendFinder">GitHub Repo</a>
         </div>
     </footer>
     </div>
@@ -170,6 +170,7 @@
     <!-- modal -->
     <div id="resultsModal" class="modal fade" role="dialog">
             <div class="modal-dialog">
+              <!-- content -->
               <div class="modal-content">
                 <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -177,7 +178,7 @@
                 </div>
                 <div class="modal-body">
                   <h2 id="matchName"></h2>
-                  <img id="matchImg" src="" alt="Friend image">
+                  <img id="matchImg" src="#" alt="friends">
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -204,7 +205,7 @@
               }
             };
 
-            for {var selector in config} {
+            for (var selector in config) {
               $(selector).chosen(config[selector]);
             }
 
@@ -249,7 +250,7 @@
             $("#q10").val()
           ]
         };
-        //grab URL of website
+        // //grab URL of website
         var currentURL = window.location.origin;
         // AJAX to friends API.
         $.post(currentURL + "/api/friends", userData, function(data) {
@@ -259,13 +260,13 @@
           $("#matchImg").attr("src", data.photo);
           // Show modal with the best match
           $("#resultsModal").modal("toggle");
-          alert("working");
+          // alert("working");
         });
       } else {
         alert("Please fill out all fields before submitting!");
       }
       return false;
-    }));
+    });
 
   </script>
             

@@ -1,11 +1,10 @@
 var express = require("express");
 var bodyParser = require("body-parser");
+var path = require("path");
 var app = express();
 
 var PORT = process.env.PORT || 8080;
 
-// application/json parse
-// var jsonParser = bodyParser.json()
 
 // application/x-www-form-urlencoded parser
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -19,13 +18,11 @@ app.use(bodyParser.raw({ type: "application/vnd.custom_type" }))
 // parse HTML body into a string
 app.use(bodyParser.text({ type: "text/html" }))
 
-require("./app/routing/htmlRoutes.js")(app);
+require("./app/routing/html-routes.js")(app);
 
-// app.use(bodyParser.urlencoded({ extended: true }));
-// app.use(bodyParser.json());
 
-require("./app/routing/apiRoutes.js")(app);
-require("./app/routing/htmlRoutes.js")(app);
+require("./app/routing/api-routes.js")(app);
+require("./app/routing/html-routes.js")(app);
 
 app.listen(PORT, function() {
   console.log("App listening on PORT: " + PORT);
