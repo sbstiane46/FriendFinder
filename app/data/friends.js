@@ -1,52 +1,52 @@
 var friends = [
     {
         name: "Bruno",
-        photo: "data/dataimages/bruno.jpg",
+        photo: "/bruno.jpg",
         score: ["1","5","2","5","2"],
     },
     {
         name: "Joli",
-        photo: "/data/dataimages/joli.jpg",
+        photo: "/joli.jpg",
         score: ["2","1","5","1","3"],
     },
     {
         name: "Luna",
-        photo: "/data/dataimages/luna.jpg",
+        photo: "/luna.jpg",
         score: ["5","5","4","2","5"]
     },
     {
         name: "Kingston",
-        photo: "/data/dataimages/kingston.jpg",
+        photo: "/kingston.jpg",
         score: ["3","2","5","5","4"]
     },
     {
         name: "Pancho",
-        photo: "/data/dataimages/pancho.jpg",
+        photo: "/pancho.jpg",
         score: ["1","4","3","5","1"]
     },
     {
         name: "Menta",
-        photo: "/data/dataimages/menta.jpg",
+        photo: "/menta.jpg",
         score: ["3","2","5","2","1"],
     },
     {
         name: "Canela",
-        photo: "/data/dataimages/canela.jpg",
+        photo: "/canela.jpg",
         score: ["3","3","3","2","5"],
     },
     {
         name: "Winston",
-        photo: "/data/dataimages/winston.jpg",
+        photo: "/winston.jpg",
         score: ["1","3","3","5","2"]
     },
     {
         name: "Melissa",
-        photo: "/data/dataimages/melissa.jpg",
+        photo: "/melissa.jpg",
         score: ["3","1","5","5","3"]
     },
     {
         name: "Fender",
-        photo: "/data/dataimages/fender.jpg",
+        photo: "/fender.jpg",
         score: ["4","3","5","3","1"]
     }
     ];
